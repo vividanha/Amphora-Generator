@@ -160,7 +160,7 @@ function triangle() {
     strokeWeight(l1);
     noFill();
     triangle(i, 0, i + l3 / 2, -l2 + l1 * 3, i + l3, 0);
-    line(i, -l2 + l1 * 3 - 5, i + 400, -l2 + l1 * 3 - 5)
+    line(i, -l2 + l1 * 3 - 5, i + 400, -l2 + l1 * 3 - 5);
   }
 }
 
@@ -168,8 +168,8 @@ function triangle() {
 function ellipse() {
   rect(0, l4, 800, l5);
   for (let i = -400; i < 400; i += l5 / 2) {
-    fill(295, 43, 36)
-    ellipse(i, l4, l5 / 5, l5 / 3)
+    fill(295, 43, 36);
+    ellipse(i, l4, l5 / 5, l5 / 3);
   }
 }
 
@@ -267,8 +267,8 @@ class Amphora {
   rim() {
     fill(359, 22, 89);
     beginShape();
-    vertex(this.x1, this.y1 - this.h1)
-    vertex(this.x1 - this.w0, this.y1 - this.h1 - this.h0)
+    vertex(this.x1, this.y1 - this.h1);
+    vertex(this.x1 - this.w0, this.y1 - this.h1 - this.h0);
     vertex(-this.x1 + this.w0, this.y1 - this.h1 - this.h0);
     vertex(-this.x1, this.y1 - this.h1);
     quadraticVertex(0, this.y1 - this.h1 + 20, this.x1, this.y1 - this.h1);
@@ -332,7 +332,7 @@ class DrawVine {
     this.y = random(-width, width);
     this.arcR = random(200, 400);
     this.ratio = random((0.3, 0.7));
-    this.angle = radians(random(270, 360))
+    this.angle = radians(random(270, 360));
     this.weight = random(3, 9);
 
   }
@@ -341,7 +341,7 @@ class DrawVine {
     noFill();
     stroke(300, 51, 25);
     strokeWeight(this.weight);
-    this.drawVine(this.x, this.y, this.arcR, this.ratio, this.angle)
+    this.drawVine(this.x, this.y, this.arcR, this.ratio, this.angle);
     pop();
   }
 
